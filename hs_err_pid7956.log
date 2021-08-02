@@ -16,7 +16,7 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m c:\Users\dans\.vscode\extensions\redhat.java-0.80.0\server\plugins\org.eclipse.equinox.launcher_1.6.200.v20210416-2027.jar -configuration c:\Users\dans\AppData\Roaming\Code\User\globalStorage\redhat.java\0.80.0\config_win -data c:\Users\dans\AppData\Roaming\Code\User\workspaceStorage\d787a839c6b0b31fc6aba01079410344\redhat.java\jdt_ws
+Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.talent=org.eclipse.jdt.ls.core.talent -Dfile.encoding=utf8 -DwatchParentProcess=false -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m c:\Users\dans\.vscode\extensions\redhat.java-0.80.0\server\plugins\org.eclipse.equinox.launcher_1.6.200.v20210416-2027.jar -configuration c:\Users\dans\AppData\Roaming\Code\User\globalStorage\redhat.java\0.80.0\config_win -data c:\Users\dans\AppData\Roaming\Code\User\workspaceStorage\d787a839c6b0b31fc6aba01079410344\redhat.java\jdt_ws
 
 Host: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, 4 cores, 5G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1023)
 Time: Tue Jul 27 18:08:10 2021 SE Asia Standard Time elapsed time: 1183.203319 seconds (0d 0h 19m 43s)
@@ -705,32 +705,32 @@ dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
 symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files\Java\jdk-16.0.2\bin\server;C:\Users\dans\AppData\Roaming\Code\User\globalStorage\redhat.java\0.80.0\config_win\org.eclipse.equinox.launcher\org.eclipse.equinox.launcher.win32.win32.x86_64_1.2.300.v20210617-0451;C:\Users\dans\AppData\Roaming\Code\User\globalStorage\redhat.java\0.80.0\config_win\org.eclipse.osgi\23\0\.cp
 
 VM Arguments:
-jvm_args: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m 
+jvm_args: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.talent=org.eclipse.jdt.ls.core.talent -Dfile.encoding=utf8 -DwatchParentProcess=false -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m 
 java_command: c:\Users\dans\.vscode\extensions\redhat.java-0.80.0\server\plugins\org.eclipse.equinox.launcher_1.6.200.v20210416-2027.jar -configuration c:\Users\dans\AppData\Roaming\Code\User\globalStorage\redhat.java\0.80.0\config_win -data c:\Users\dans\AppData\Roaming\Code\User\workspaceStorage\d787a839c6b0b31fc6aba01079410344\redhat.java\jdt_ws
 java_class_path (initial): c:\Users\dans\.vscode\extensions\redhat.java-0.80.0\server\plugins\org.eclipse.equinox.launcher_1.6.200.v20210416-2027.jar
 Launcher Type: SUN_STANDARD
 
 [Global flags]
-    uintx AdaptiveSizePolicyWeight                 = 90                                        {product} {command line}
-     intx CICompilerCount                          = 3                                         {product} {ergonomic}
-    uintx GCTimeRatio                              = 4                                         {product} {command line}
-   size_t InitialHeapSize                          = 104857600                                 {product} {command line}
-   size_t MaxHeapSize                              = 1073741824                                {product} {command line}
-   size_t MaxNewSize                               = 357564416                                 {product} {ergonomic}
-   size_t MinHeapDeltaBytes                        = 524288                                    {product} {ergonomic}
-   size_t MinHeapSize                              = 104857600                                 {product} {command line}
-   size_t NewSize                                  = 34603008                                  {product} {ergonomic}
-    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
-    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
-   size_t OldSize                                  = 70254592                                  {product} {ergonomic}
-    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
-    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
-     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+    uintx AdaptiveSizePolicyWeight                 = 90                                        {talent} {command line}
+     intx CICompilerCount                          = 3                                         {talent} {ergonomic}
+    uintx GCTimeRatio                              = 4                                         {talent} {command line}
+   size_t InitialHeapSize                          = 104857600                                 {talent} {command line}
+   size_t MaxHeapSize                              = 1073741824                                {talent} {command line}
+   size_t MaxNewSize                               = 357564416                                 {talent} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 524288                                    {talent} {ergonomic}
+   size_t MinHeapSize                              = 104857600                                 {talent} {command line}
+   size_t NewSize                                  = 34603008                                  {talent} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd talent} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd talent} {ergonomic}
+   size_t OldSize                                  = 70254592                                  {talent} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd talent} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd talent} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {talent} {ergonomic}
    size_t SoftMaxHeapSize                          = 1073741824                             {manageable} {ergonomic}
-     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
-     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
-     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
-     bool UseParallelGC                            = true                                      {product} {command line}
+     bool UseCompressedClassPointers               = true                           {talent lp64_talent} {ergonomic}
+     bool UseCompressedOops                        = true                           {talent lp64_talent} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd talent} {ergonomic}
+     bool UseParallelGC                            = true                                      {talent} {command line}
 
 Logging:
 Log output configuration:

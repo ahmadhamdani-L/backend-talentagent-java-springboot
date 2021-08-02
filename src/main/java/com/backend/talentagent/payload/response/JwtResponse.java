@@ -8,15 +8,15 @@ public class JwtResponse {
 	private Long id;
 	private String username;
 	private String email;
-	private String rol;
+
 	private List<String> roles;
 
-	public JwtResponse(String accessToken, Long id, String username, String email, String rol, List<String> roles) {
+	public JwtResponse(String accessToken, Long id, String username, String email, List<String> roles) {
 		this.token = accessToken;
 		this.id = id;
 		this.username = username;
 		this.email = email;
-		this.rol = rol;
+	
 		this.roles = roles;
 	}
 
@@ -60,15 +60,31 @@ public class JwtResponse {
 		this.username = username;
 	}
 
-	public String getRol() {
-		return rol;
-	}
 
-	public void setRol(String rol) {
-		this.rol = rol;
-	}
 
 	public List<String> getRoles() {
 		return roles;
 	}
+
+    /**
+     * @return String return the type
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * @param type the type to set
+     */
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    /**
+     * @param roles the roles to set
+     */
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
+    }
+
 }
