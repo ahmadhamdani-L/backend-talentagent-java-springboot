@@ -16,6 +16,7 @@ import com.backend.talentagent.storage.UploadFileResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,8 +33,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import javax.servlet.http.HttpServletRequest;
 
+
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/talent")
+@RequestMapping("/api/talent")
 public class TalentController {
 
     @Autowired
@@ -63,19 +66,19 @@ public class TalentController {
 
     } 
 
-    @PostMapping("/addMultipart")
+    @PostMapping("/addt")
     public ResponseEntity<?> addTalentMultipart(Talent talent, @RequestParam("file") MultipartFile file) {
 
         try {
             String fileName = storageService.storeFile(file);
-            Talent prod = talent;
+            Talent tale = talent;
             if (fileName.contains(".")) {
                 String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
                         .path("/talent/downloadFile/").path(fileName).toUriString();
                         
-                prod.setProdImage(fileDownloadUri);
+                tale.setTaleImage(fileDownloadUri);
             }
-            return ResponseEntity.ok().body(talentService.addTalent(prod));
+            return ResponseEntity.ok().body(talentService.addTalent(tale));
 
         } catch (Exception e) {
     
