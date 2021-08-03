@@ -57,9 +57,9 @@ public class TalentController {
     public ResponseEntity<?> addTalent(@RequestBody Talent talent) {
 
         try {
-            Talent prod = talentService.addTalent(talent);
+            Talent tale = talentService.addTalent(talent);
 
-            return ResponseEntity.ok().body(prod);
+            return ResponseEntity.ok().body(tale);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
